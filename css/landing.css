@@ -1,0 +1,155 @@
+/* body {
+  background-color: #000;
+  font-family: "Roboto" !important;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.7;
+} */
+
+.landing {
+  height: 100vh;
+  width: 100vw;
+  margin: 0%;
+}
+
+.moved {
+  transform: translateY(-100vh);
+  transition: 2s all ease;
+  /* position: absolute; */
+}
+
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 30vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+#landing-header p {
+  color: #fff;
+  margin-top: 1.2rem;
+}
+
+.slideshow {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite;
+}
+
+.slideshow li:nth-child(1) {
+  background-image: url(../img/logo2.png);
+}
+
+.slideshow li:nth-child(2) {
+  background-image: url(../img/heaader.jpg);
+  animation-delay: 3s;
+}
+
+.slideshow li:nth-child(3) {
+  background-image: url(../img/logo3.jpg);
+  animation-delay: 11s;
+}
+
+.slideshow li:nth-child(4) {
+  background-image: url(../img/logo4.jpg);
+  animation-delay: 15s;
+}
+
+.slideshow li:nth-child(5) {
+  background-image: url(../img/logo6.png);
+  animation-delay: 20s;
+}
+
+.slideshow li:nth-child(6) {
+  background-image: url(../img/logo2.png);
+  animation-delay: 25s;
+}
+
+.slideshow li:nth-child(7) {
+  background-image: url(../img/logo5.jpg);
+  animation-delay: 30s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+
+  20% {
+    opacity: 1
+  }
+
+  30% {
+    opacity: 0
+  }
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+  opacity: 1;
+}
+
+.banner_button {
+  cursor: pointer;
+  color: green;
+  outline: none;
+  border: none;
+  font-weight: 800;
+  border-radius: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin: 6.5rem;
+  padding-top: 1.5rem;
+  background-color: #fff;
+  padding-bottom: 2rem;
+  text-decoration: none;
+}
+
+.banner_button:hover {
+  color: green;
+  background-color: #a7a6a6;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.banner_fadeBottom {
+  height: 7.4rem;
+  background-image: linear-gradient(180deg,
+      transparent,
+      rgba(37, 37, 37, 0.61),
+      #111);
+}
