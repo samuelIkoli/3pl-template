@@ -12,8 +12,8 @@
 }
 .fixed{
     position: absolute;
-    left: -220px;
-    top: 180px;
+    left: -20%;
+    top: 42%;
 }
 .behind{
     z-index: -1;
