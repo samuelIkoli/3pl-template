@@ -46,9 +46,12 @@
     <div id="page">
         <section class="landing" id="cover">
             <div id="landing-header">
-                <h1>Phoenix Park Projects!</h1>
+                <h1 class="hidden-overflowy">Phoenix <br> Park <br> Projects!</h1>
                 <p>Fresh ideas, dynamic engagement & innovative solutions</p>
-                <button class="banner_button" id="landingBtn">Enter Website &#8595;</button>
+                <div class="stage">
+                    <button class="box bounce-5 banner_button hidden-slow" id="landingBtn">Enter Website &#8595;</button>  
+                </div>
+                
             </div>
 
             <ul class="slideshow">
@@ -121,13 +124,13 @@
                     </h4>
                     <h5 class="">
                         <div class="headingPrimarySub">
-                            <div class="">
+                            <div class="hidden-overflow">
                                 Fresh Ideas
                             </div>
-                            <div class="">
+                            <div class="hidden-overflow">
                                 Dynamic Engagement
                             </div>
-                            <div class="">
+                            <div class="hidden-overflow">
                                 Innovative Solutions
                             </div>
                         </div>
@@ -135,8 +138,23 @@
                 </div>
 
             </header>
-
-            <div class="container d-flex fonta py-5">
+            <section>
+                <h2 class="justify-center my-5 hidden-overflow"> About Us </h2>
+                <div class="container px-5 position-relative d-flex justify-center hidden-overflow" style="height: 42rem;">
+                    <img class="mx-5 box-shadow behind" src="img/world.jpg" alt="world map" width="500" height="600">
+                    <div class="card fixed reveal" style="width: 25rem; height: 25rem; ">
+                        <div class="m-3" style="width: 14rem; height: 1rem; background-color: #00513e;" ></div>
+                        <div class="card-body">
+                          <h5 class="card-title hidden-overflow">Global impact for your business</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <button class="bottom-left btn"><a href="./pdf/profile.pdf">Learn more &#8595;</a></button>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            
+            <div class="container d-flex fonta py-5 ">
                 <p>
                     Phoenix Park Projects Limited (3PL), a company incorporated in Nigeria, is a
                     technology-driven company based on digital and physical platforms focused
