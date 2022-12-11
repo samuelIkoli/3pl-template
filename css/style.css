@@ -16,15 +16,72 @@
     left: 16px;
 }
 
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 33%;
+    transform: translate(50%, 0%);
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .fixed {
     position: absolute;
-    left: 40%;
-    top: -58%;
-    overflow-y: hidden;
+    left: 39%;
+    top: -55%;
 }
 
 .behind {
     z-index: -1;
+}
+
+.mission {
+    height: 50rem;
+}
+
+.mission-row {
+    height: 41rem;
+}
+
+.mission-background {
+    /* width: 55rem; */
+    height: 100%;
+    background-color: #bbaf9a;
+    padding: 0;
+    /* top: 42%; */
+}
+
+.vision {
+    height: 50rem;
+}
+
+.vision-row {
+    height: 41rem;
+}
+
+.vision-background {
+    /* width: 55rem; */
+    height: 100%;
+    background-color: #10ca98;
+    padding: 0;
+    /* top: 42%; */
 }
 
 .position-relative {
@@ -78,13 +135,13 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: #fff;
-    background-color: black;
+    background-color: white;
 }
 
 p {
     padding-left: 10%;
     padding-right: 10%;
-    color: #fff;
+    color: black;
 }
 
 h1 strong {
@@ -716,12 +773,11 @@ btn:visited {
 
 
 .card {
-    /* perspective: 150rem;
-    -moz-perspective: 150rem; */
+    perspective: 150rem;
+    -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
     margin: 4%;
-    overflow-y: hidden;
 }
 
 .card__side {
@@ -869,21 +925,6 @@ btn:visited {
     margin: 0 auto;
 }
 
-/* @media only screen and (max-width: 673px) {
-    .central {
-        left: 0.8%;
-    }
-} */
-
-@media only screen and (max-width: 768px) {
-    .central {
-        left: auto;
-        top: -50%;
-        width: 100%;
-        height: 40%;
-    }
-}
-
 @media only screen and (max-width: 991px),
 only screen and (hover: none) {
     .leftInfoSession {
@@ -894,10 +935,6 @@ only screen and (hover: none) {
     .rightInfoSession {
         margin-right: 0%;
         margin-bottom: -20%;
-    }
-
-    .central {
-        left: auto
     }
 
     .card {
@@ -1071,10 +1108,6 @@ hr {
 }
 
 /* new css code */
-section {
-    overflow: hidden;
-}
-
 section .text-container {
     display: flex;
 }
@@ -1108,13 +1141,11 @@ section .text-container .text-box h3 {
     transform: translateY(200px);
     opacity: 0;
     transition: 1s all ease;
-    overflow-y: hidden;
 }
 
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
-    overflow-y: hidden;
 }
 
 .sideveal {
