@@ -61,6 +61,20 @@
     padding: 0;
     /* top: 42%; */
 }
+.vision{
+    height: 50rem; 
+}
+.vision-row{
+    height: 41rem; 
+}
+.vision-background{
+    /* width: 55rem; */
+    height: 100%;
+    background-color:#10ca98;
+    padding: 0;
+    /* top: 42%; */
+}
+
 .position-relative{
     position: relative;
 }
