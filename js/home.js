@@ -1,8 +1,8 @@
 
-let mainHome = document.querySelector('#mainHome');
-let page = document.querySelector('#page');
-let cover = document.querySelector('#cover');
-let landingBtn = document.querySelector("#landingBtn");
+const mainHome = document.querySelector('#mainHome');
+const page = document.querySelector('#page');
+const cover = document.querySelector('#cover');
+const landingBtn = document.querySelector("#landingBtn");
 landingBtn.addEventListener('click', () => {
     mainHome.classList.remove('hidden');
     page.classList.add('moved');
@@ -32,4 +32,4 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 setTimeout(() =>
     landingBtn.classList.remove('hidden-slow')
-    , 5100);
+    , 6200);

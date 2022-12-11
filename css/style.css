@@ -18,6 +18,20 @@
 .behind{
     z-index: -1;
 }
+    
+.mission{
+    height: 50rem; 
+}
+.mission-row{
+    height: 41rem; 
+}
+.mission-background{
+    /* width: 55rem; */
+    height: 100%;
+    background-color:#bbaf9a;
+    padding: 0;
+    /* top: 42%; */
+}
 .position-relative{
     position: relative;
 }
@@ -36,8 +50,8 @@
 }
 .hidden-slow {
     opacity: 0;
-    -webkit-transition: 2s ease all;
-    transition: 2s ease all;
+    -webkit-transition: 3s ease all;
+    transition: 3s ease all;
 }
 
 .box-shadow{
@@ -63,13 +77,14 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #010E1F;
+    color: #fff;
+    background-color: black;
 }
 
 p {
     padding-left: 10%;
     padding-right: 10%;
-    color: #010E1F;
+    color: #fff;
 }
 
 h1 strong {

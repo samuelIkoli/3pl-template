@@ -111,7 +111,7 @@
 }
 
 .slideshow li:nth-child(2) {
-  background-image: url(../img/heaader.jpg);
+  background-image: url(../img/logo5.jpg);
   animation-delay: 3s;
 }
 
@@ -121,7 +121,7 @@
 }
 
 .slideshow li:nth-child(4) {
-  background-image: url(../img/logo4.jpg);
+  background-image: url(../img/heaader.jpg);
   animation-delay: 15s;
 }
 
@@ -136,7 +136,7 @@
 }
 
 .slideshow li:nth-child(7) {
-  background-image: url(../img/logo5.jpg);
+  background-image: url(../img/logo4.jpg);
   animation-delay: 30s;
 }
 
