@@ -4,7 +4,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+.nav-link{
+    color:#00513e;
+}
 /*
 
 IMPORTANT
@@ -25,6 +27,7 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: #010E1F;
+    background-color: black
 }
 
 p {
@@ -35,8 +38,9 @@ p {
 
 h1 strong {
     font-family: "SIMPLIFICA Typeface" !important;
-    color: #28345A;
+    color: #00513e;
     font-weight: bold;
+    
 }
 
 h3 strong {
