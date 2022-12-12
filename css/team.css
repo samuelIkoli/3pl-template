@@ -3,10 +3,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
-.nav-link{
-    color:#00513e;
+
+.nav-link {
+    color: #00513e;
 }
+
 /*
 
 IMPORTANT
@@ -40,7 +43,7 @@ h1 strong {
     font-family: "SIMPLIFICA Typeface" !important;
     color: #00513e;
     font-weight: bold;
-    
+
 }
 
 h3 strong {
@@ -192,6 +195,9 @@ btn:visited {
     list-style: none;
 }
 
+.mt-body2 {
+    padding-top: 4rem;
+}
 
 /* Nav Bar */
 @media (min-width:768px) {
@@ -738,6 +744,7 @@ btn:visited {
     position: relative;
     height: 35rem;
     margin: 4%;
+    z-index: -1;
 }
 
 .card__side {
@@ -1058,4 +1065,8 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+.zb {
+    z-index: -1;
 }
