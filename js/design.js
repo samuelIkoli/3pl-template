@@ -2,89 +2,81 @@
 //Retrieved from: https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 //Modified by: Brandon Lammey
 //Function adds smooth scroll to buttons on click. Modified to not include click of carousel buttons
-$(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+$(document).ready(function () {
+  // Add smooth scrolling to all links
+  $("a").on('click', function (event) {
 
-      // Make sure this.hash has a value before overriding default behavior
-      // Does not scroll on click for Carousel
-      if (this.hash !== "" && this.hash !== "#myCarousel") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
+    // Make sure this.hash has a value before overriding default behavior
+    // Does not scroll on click for Carousel
+    if (this.hash !== "" && this.hash !== "#myCarousel") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-        // Store hash
-        var hash = this.hash;
+      // Store hash
+      var hash = this.hash;
 
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function () {
 
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
-        });
-      } // End if
-    });
-
-    //Automatically change next meeting date
-    let nextMeeting = new Date(); //Starts as current date
-    let prevMeeting = $("#nextMeetingDate");
-
-    while(nextMeeting.getDay() != 2)
-    {
-      nextMeeting.setDate(nextMeeting.getDate() + 1);
-    }
-    prevMeeting.html((nextMeeting.getMonth() + 1) + '/' + nextMeeting.getDate() + '/' + nextMeeting.getFullYear());
-    
-    //Adjust Navbar
-    var top = $('.infoBox1').offset().top;
-
-    $(document).scroll(function(){
-      if($(this).scrollTop() > top)
-      {   
-        $('.navbar-default').css({"background-color": "#fff"})
-      }
-      else
-      {
-          $('.navbar-default').css({"background": "none"})
-      }
-    });
-
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
   });
+
+  //Automatically change next meeting date
+  let nextMeeting = new Date(); //Starts as current date
+  let prevMeeting = $("#nextMeetingDate");
+
+  while (nextMeeting.getDay() != 2) {
+    nextMeeting.setDate(nextMeeting.getDate() + 1);
+  }
+  prevMeeting.html((nextMeeting.getMonth() + 1) + '/' + nextMeeting.getDate() + '/' + nextMeeting.getFullYear());
+
+  //Adjust Navbar
+  var top = $('.infoBox1').offset().top;
+
+  $(document).scroll(function () {
+    if ($(this).scrollTop() > top) {
+      $('.navbar-default').css({ "background-color": "#fff" })
+    }
+    else {
+      $('.navbar-default').css({ "background": "none" })
+    }
+  });
+
+});
 
 
 /*
 Save Contact details to Firebase 
 */
-function saveToFirebase(name, email, message) 
-{
-  var submissionObject = 
+function saveToFirebase(name, email, message) {
+  var submissionObject =
   {
-      name: name,
-      email: email,
-      message: message
+    name: name,
+    email: email,
+    message: message
   };
 
-  firebase.database().ref('subscription-entries').push().set(submissionObject).then(function(snapshot) 
-    {
-            success(); //success method
-    }, 
-  function(error) 
-    {
-            console.log('error' + error);
-            error(); // some error method
+  firebase.database().ref('subscription-entries').push().set(submissionObject).then(function (snapshot) {
+    success(); //success method
+  },
+    function (error) {
+      console.log('error' + error);
+      error(); // some error method
     });
-  }
+}
 
-function success()
-{
+function success() {
   console.log("Succesfully added post to database.");
   alert("Post Sent!")
 }
 
-function error()
-{
+function error() {
   console.log("Error Adding Message!");
 }
 
@@ -92,9 +84,9 @@ function error()
 
 
 //Close navbar when ancher tag is clicked
-$(document).on('click','.navbar-collapse.in',function(e) {
-  if( $(e.target).is('a:not(".dropdown-toggle")') ) {
-      $(this).collapse('hide');
+$(document).on('click', '.navbar-collapse.in', function (e) {
+  if ($(e.target).is('a:not(".dropdown-toggle")')) {
+    $(this).collapse('hide');
   }
 });
 
@@ -104,7 +96,7 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 // //Modify Navbar on Scroll
 // var mainbottom = $('#header').height();
 
-// // on scroll, 
+// // on scroll,
 // $(window).on('scroll',function(){
 
 //     // we round here to reduce a little workload

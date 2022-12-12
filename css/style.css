@@ -52,9 +52,41 @@
     z-index: -1;
 }
 
-.mission {
-    height: 50rem;
+.arise-n-grow {
+    /* transition: moveInBottom 3s; */
+    animation: growth 3s;
+    animation-fill-mode: backwards;
+    font-size: 47px;
 }
+
+@keyframes growth {
+    0% {
+        font-size: 30px;
+    }
+
+    100% {
+        font-size: 47px;
+    }
+}
+
+.small_growth {
+    animation: small_growth 3s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes small_growth {
+    0% {
+        font-size: 0px;
+    }
+
+    100% {
+        font-size: 16px;
+    }
+}
+
+/* .mission {
+    height: 50rem;
+} */
 
 .mission-row {
     height: 41rem;
@@ -69,7 +101,7 @@
 }
 
 .vision {
-    height: 50rem;
+    padding-top: 3rem;
 }
 
 .vision-row {
@@ -134,7 +166,6 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #fff;
     background-color: white;
 }
 
@@ -204,7 +235,6 @@ h3 strong {
     text-align: center;
 }
 
-
 .headingPrimary {
     color: #fff;
     text-transform: uppercase;
@@ -219,7 +249,6 @@ h3 strong {
     font-weight: 800;
     /* letter-spacing: 15px; */
     animation: moveInLeft 3s ease-out;
-
 }
 
 .headingPrimarySub {
@@ -688,6 +717,12 @@ btn:visited {
         padding: 2.5%;
     }
 
+    .fixed {
+        position: absolute;
+        left: auto;
+        top: -53%;
+    }
+
     .projectList {
         margin: auto;
         width: 80%;
@@ -1108,6 +1143,7 @@ hr {
 }
 
 /* new css code */
+
 section .text-container {
     display: flex;
 }
@@ -1165,11 +1201,9 @@ section .text-container .text-box h3 {
     transform: translateX(-150px);
     opacity: 0;
     transition: 4s all ease;
-    background: #0dcaf0;
 }
 
 .leftveal.active {
     transform: translateX(0);
     opacity: 1;
-    background: #0dcaf0;
 }
