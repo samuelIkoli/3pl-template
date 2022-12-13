@@ -1214,3 +1214,19 @@ section .text-container .text-box h3 {
     transform: translateX(0);
     opacity: 1;
 }
+
+.emission-background {
+    /* width: 55rem; */
+    /* height: 100%; */
+    background-color: #bbaf9a;
+    padding: 0;
+    /* top: 42%; */
+}
+
+.grey {
+    background-color: #bbaf9a;
+}
+
+.bb {
+    background-color: #00c2cb;
+}
