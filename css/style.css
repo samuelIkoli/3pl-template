@@ -89,7 +89,7 @@
 } */
 
 .mission-row {
-    height: 41rem;
+    height: 20rem;
 }
 
 .mission-background {
@@ -97,6 +97,7 @@
     height: 100%;
     background-color: #bbaf9a;
     padding: 0;
+    overflow: hidden;
     /* top: 42%; */
 }
 
@@ -105,7 +106,7 @@
 }
 
 .vision-row {
-    height: 41rem;
+    height: 20rem;
 }
 
 .vision-background {
@@ -113,6 +114,7 @@
     height: 100%;
     background-color: #10ca98;
     padding: 0;
+    overflow: hidden;
     /* top: 42%; */
 }
 
@@ -262,7 +264,7 @@ h3 strong {
 .vr {
     border-left: 6px solid #053d23;
     ;
-    height: 35rem;
+    height: 20rem;
 }
 
 

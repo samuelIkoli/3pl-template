@@ -744,7 +744,7 @@ btn:visited {
     position: relative;
     height: 35rem;
     margin: 4%;
-    z-index: -1;
+    overflow: hidden;
 }
 
 .card__side {
@@ -850,6 +850,7 @@ btn:visited {
     top: 20rem;
     right: 1rem;
     width: 75%;
+    overflow: hidden;
 }
 
 .card__heading-span {
