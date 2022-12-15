@@ -54,8 +54,7 @@
 
 .arise-n-grow {
     font-size: 47px;
-    animation: growth 3s;
-    transition: all 5s;
+    animation: growth 7s;
 }
 
 @keyframes growth {
@@ -77,8 +76,7 @@
 
 .small_growth {
     font-size: 16px;
-    animation: small_growth 3s;
-    transition: all 7s;
+    animation: small_growth 7s;
 }
 
 @keyframes small_growth {
@@ -103,7 +101,7 @@
 } */
 
 .mission-row {
-    height: 20rem;
+    height: 25rem;
 }
 
 .mission-background {
@@ -120,12 +118,12 @@
 }
 
 .vision-row {
-    height: 20rem;
+    height: 25rem;
 }
 
 .vision-background {
     /* width: 55rem; */
-    height: 100%;
+    /* height: 100%; */
     background-color: #10ca98;
     padding: 0;
     overflow: hidden;

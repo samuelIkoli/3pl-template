@@ -118,7 +118,7 @@ h3 strong {
 btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 20px;
     display: inline-block;
     border-radius: 100px;
     /* Set the circular shape of the button */
@@ -982,7 +982,7 @@ only screen and (hover: none) {
         -webkit-transform: translate(0);
         transform: translate(0);
         width: 100%;
-        padding: 0rem 2rem 2rem 2rem;
+        /* padding: 0rem 2rem 2rem 2rem; */
         display: flex;
         flex-direction: row;
         bottom: 0;
