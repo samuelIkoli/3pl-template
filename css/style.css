@@ -42,6 +42,13 @@
     transform: translate(-50%, -50%);
 }
 
+.toppers {
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    transform: translate(-20%, -70%);
+}
+
 .fixed {
     position: absolute;
     left: 39%;
@@ -225,6 +232,10 @@ h3 strong {
 
     /* clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); */
     /* Starts at top left corner and moves clockwise */
+}
+
+.conmage {
+    opacity: 0.5;
 }
 
 /* 
