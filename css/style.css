@@ -91,17 +91,19 @@
 
 @keyframes small_growth {
     0% {
+        filter: blur(4px);
         font-size: 8px;
         transform: translateY(100rem);
     }
 
     50% {
-
+        filter: blur(2px);
         font-size: 8px;
         transform: translateY(0rem);
     }
 
     100% {
+        filter: blur(0.8px);
         font-size: 16px;
     }
 }
