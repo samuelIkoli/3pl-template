@@ -61,22 +61,25 @@
 
 .arise-n-grow {
     font-size: 47px;
+    /* filter: blur(4px); */
     animation: growth 7s;
 }
 
 @keyframes growth {
     0% {
+        filter: blur(4px);
         font-size: 23px;
         transform: translateY(100rem);
     }
 
     50% {
-
+        filter: blur(2px);
         font-size: 23px;
         transform: translateY(0rem);
     }
 
     100% {
+        filter: blur(0.8px);
         font-size: 47px;
     }
 }
