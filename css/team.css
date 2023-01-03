@@ -454,14 +454,15 @@ btn:visited {
 }
 
 #footer {
-    padding: 5rem 0;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
 }
 
 #footer-main {
     background-image: linear-gradient(to right bottom, rgba(155, 198, 191, 0.4),
             #00513e);
+    margin-top: 8rem;
 }
-
 
 /* Project links in infoBox 2 */
 
