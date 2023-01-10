@@ -528,6 +528,10 @@ btn:visited {
     height: 100vh;
 }
 
+.mt-plenty {
+    padding-top: 4rem;
+}
+
 .container_img {
     height: 100%;
     width: 100%;
@@ -1356,4 +1360,21 @@ section .text-container .text-box h3 {
     justify-content: center;
     align-items: center;
     border-radius: 25% 25%;
+}
+
+.cardx {
+    background-color: #FFF;
+    padding: 3rem;
+    width: 70%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cardz {
+    /* background-color: #FFF; */
+    padding: 1rem;
+    width: 80%;
+    text-align: center;
+    margin: 4rem;
+    color: #FFF;
 }
