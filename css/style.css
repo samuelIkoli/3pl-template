@@ -65,6 +65,7 @@
     font-size: 50px;
     /* filter: blur(4px); */
     animation: growth 7s;
+    -webkit-text-stroke: 2px black;
 }
 
 @keyframes growth {
@@ -72,23 +73,27 @@
         /* filter: blur(3px); */
         font-size: 45px;
         transform: translateY(100rem);
+        -webkit-text-stroke: 0px black;
     }
 
     50% {
         /* filter: blur(2px); */
         font-size: 45px;
         transform: translateY(0rem);
+        -webkit-text-stroke: 0px black;
     }
 
     100% {
         /* filter: blur(0.8px); */
         font-size: 50px;
+        -webkit-text-stroke: 2px black;
     }
 }
 
 .small_growth {
     font-size: 20px;
     animation: small_growth 7s;
+    -webkit-text-stroke: 0.85px black;
 }
 
 @keyframes small_growth {
@@ -96,17 +101,20 @@
         /* filter: blur(3px); */
         font-size: 17px;
         transform: translateY(100rem);
+        -webkit-text-stroke: 0px black;
     }
 
     50% {
         /* filter: blur(2px); */
         font-size: 17px;
         transform: translateY(0rem);
+        -webkit-text-stroke: 0px black;
     }
 
     100% {
         /* filter: blur(0.8px); */
         font-size: 20px;
+        -webkit-text-stroke: 0.85px black;
     }
 }
 
@@ -646,8 +654,7 @@ btn:visited {
 }
 
 #footer-main {
-    background-image: linear-gradient(to right bottom, rgba(155, 198, 191, 0.4),
-            #00513e);
+    background-image: linear-gradient(to right bottom, #f3fbf2, #1c4b1c);
     margin-top: 8rem;
 }
 
@@ -1199,7 +1206,6 @@ hr {
 
 .lefter {
     animation: moveInLeft 3s ease-out;
-    background: #00c2cb;
 }
 
 .righter {
@@ -1215,7 +1221,7 @@ section .text-container {
 section .text-container .text-box {
     margin: 20px;
     padding: 20px;
-    background: #00c2cb;
+    background: #3bb037;
 }
 
 section .text-container .text-box h3 {
@@ -1312,8 +1318,8 @@ section .text-container .text-box h3 {
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #1b1c1d;
-    color: white;
+    background: white;
+    color: #1b1c1d;
     text-align: center;
     border-radius: 5px;
     backface-visibility: hidden;
@@ -1368,6 +1374,7 @@ section .text-container .text-box h3 {
     width: 70%;
     text-align: center;
     margin-bottom: 1rem;
+    background-color: #e2f8e0;
 }
 
 .cardz {

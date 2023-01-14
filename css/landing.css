@@ -98,7 +98,6 @@
   position: relative;
   text-align: center;
   overflow: hidden;
-  -webkit-text-stroke: 2px black;
 }
 
 #landing-header h1 {
@@ -110,7 +109,6 @@
 #landing-header p {
   color: #fff;
   margin-top: 1.2rem;
-  -webkit-text-stroke: 0.85px black;
 }
 
 .slideshow {

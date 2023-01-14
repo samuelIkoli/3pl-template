@@ -1,7 +1,7 @@
 const cards = document.querySelectorAll('.cardRoll');
 for (let card of cards) {
     card.addEventListener('click', function () {
-        card.style.setProperty(`--position`, `540deg`);
+        card.style.setProperty(`--position`, `180deg`);
         card.classList.toggle('is-flipped');
     });
 }
