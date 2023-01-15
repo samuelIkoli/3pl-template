@@ -598,12 +598,13 @@ btn:visited {
 }
 
 .contact {
-    max-width: 50%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 #contactUs {
     padding-top: 7rem;
+    color: #1c4b1c;
 }
 
 
@@ -615,8 +616,8 @@ btn:visited {
     border-radius: 0px;
     border: none;
     margin-bottom: 10px;
-    background: #C7DCDD;
-    color: #fff;
+    background: #95e293;
+    color: black;
     -webkit-transition: .5s ease all;
     transition: .5s ease all;
 }
@@ -629,7 +630,7 @@ btn:visited {
 .contact button {
     display: block;
     width: 100%;
-    background: #28345A;
+    background: #1c4b1c;
     border-radius: 0px;
     padding: 5px 10px;
     border: none;
@@ -1023,12 +1024,6 @@ btn:visited {
 
 .u-margin-top-huge {
     margin-top: 10rem !important;
-}
-
-
-.tutorialRow {
-    max-width: 114rem;
-    margin: 0 auto;
 }
 
 @media only screen and (max-width: 991px),
