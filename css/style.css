@@ -1315,12 +1315,12 @@ section .text-container .text-box h3 {
     height: 100%;
     width: 100%;
     background: white;
-    color: #1b1c1d;
+    color: white;
     text-align: center;
     border-radius: 5px;
     backface-visibility: hidden;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
 }
 
