@@ -17,7 +17,7 @@ const tranformCard = () => {
             let position = -70 + 4 / 15 * location;
             tranformCard.style.setProperty(`--position`, `${position}deg`);
             tranformCard.classList.add("is-flipped");
-        } else if (location > 580 && location < 720) {
+        } else if (location > 580 && location < 1000) {
             tranformCard.style.setProperty(`--position`, `180deg`);
             tranformCard.classList.add("is-flipped");
         } else {

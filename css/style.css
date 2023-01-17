@@ -236,15 +236,16 @@ h3 strong {
     height: 30rem;
     transition: transform 450ms;
     /* object-fit: contain; */
-    background-image: linear-gradient(to right bottom,
+    /* background-image: linear-gradient(to right bottom,
             rgba(155, 198, 191, 0.4),
             rgba(50, 92, 108, 0.9)),
         url(../img/logo6.jpg);
-    background-color: rgba(50, 92, 108, 0.9);
+    background-color: rgba(50, 92, 108, 0.9); */
     background-size: cover;
     /* background-position: top; */
     /* Fits elements upon resizing */
     position: relative;
+    -webkit-text-stroke: 0.85px black;
 
     /* clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); */
     /* Starts at top left corner and moves clockwise */
@@ -1397,4 +1398,88 @@ section .text-container .text-box h3 {
         linear-gradient(-45deg, transparent 75%, green 80%, transparent 0),
         radial-gradient(green 2px, transparent 0);
     background-size: 30px 30px, 30px 30px;
+}
+
+.fly1 {
+    font-size: 20px;
+    animation: fly1 7s;
+    -webkit-text-stroke: 0.85px black;
+}
+
+@keyframes fly1 {
+    0% {
+        /* filter: blur(3px); */
+        font-size: 17px;
+        transform: translateY(100rem);
+        -webkit-text-stroke: 0px white;
+    }
+
+    50% {
+        /* filter: blur(2px); */
+        font-size: 17px;
+        transform: translateY(0rem);
+        -webkit-text-stroke: 0px white;
+    }
+
+    100% {
+        /* filter: blur(0.8px); */
+        font-size: 20px;
+        -webkit-text-stroke: 0.85px black;
+    }
+}
+
+.fly2 {
+    font-size: 20px;
+    animation: fly2 7s;
+    -webkit-text-stroke: 0.85px black;
+}
+
+@keyframes fly2 {
+    0% {
+        /* filter: blur(3px); */
+        font-size: 17px;
+        transform: translateY(100rem);
+        -webkit-text-stroke: 0px white;
+    }
+
+    50% {
+        /* filter: blur(2px); */
+        font-size: 17px;
+        transform: translateY(0rem);
+        -webkit-text-stroke: 0px white;
+    }
+
+    100% {
+        /* filter: blur(0.8px); */
+        font-size: 20px;
+        -webkit-text-stroke: 0.85px black;
+    }
+}
+
+.fly3 {
+    font-size: 20px;
+    animation: fly3 7s;
+    -webkit-text-stroke: 0.85px black;
+}
+
+@keyframes fly3 {
+    0% {
+        /* filter: blur(3px); */
+        font-size: 17px;
+        transform: translateY(100rem);
+        -webkit-text-stroke: 0px white;
+    }
+
+    50% {
+        /* filter: blur(2px); */
+        font-size: 17px;
+        transform: translateY(0rem);
+        -webkit-text-stroke: 0px white;
+    }
+
+    100% {
+        /* filter: blur(0.8px); */
+        font-size: 20px;
+        -webkit-text-stroke: 0.85px black;
+    }
 }
