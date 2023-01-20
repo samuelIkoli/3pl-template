@@ -1,10 +1,3 @@
-/* body {
-  background-color: #000;
-  font-family: "Roboto" !important;
-  font-weight: 400;
-  font-size: 38px;
-  line-height: 1.7;
-} */
 .banner_button {
   cursor: pointer;
 }
@@ -102,7 +95,6 @@
 
 #landing-header h1 {
   margin-bottom: 2rem;
-  font-weight: 600;
   color: #fff;
 }
 
@@ -139,17 +131,17 @@
 }
 
 .slideshow li:nth-child(1) {
-  background-image: url(../img/logo2.png);
+  background-image: url(../img/logo5.jpg);
 }
 
 .slideshow li:nth-child(2) {
-  background-image: url(../img/logo5.jpg);
-  animation-delay: 3s;
+  background-image: url(../img/logo3.jpg);
+  animation-delay: 10s;
 }
 
 .slideshow li:nth-child(3) {
-  background-image: url(../img/logo3.jpg);
-  animation-delay: 11s;
+  background-image: url(../img/logo2.png);
+  animation-delay: 20s;
 }
 
 .slideshow li:nth-child(4) {
@@ -158,7 +150,7 @@
 }
 
 .slideshow li:nth-child(5) {
-  background-image: url(../img/logo6.png);
+  background-image: url(../img/logo6.jpg);
   animation-delay: 20s;
 }
 
