@@ -1,10 +1,10 @@
-* {
+/* * { */
     /* Normalize */
-    margin: 0px;
+    /* margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box; */
     /* overflow-x: hidden; */
-}
+/* } */
 
 .mt-10 {
     margin-top: 144px;
@@ -32,6 +32,7 @@
     position: absolute;
     bottom: 8px;
     right: 33%;
+    -webkit-transform: translate(50%, 0%);
     transform: translate(50%, 0%);
     background-color: #00513e;
     height: 3rem;
@@ -41,6 +42,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -48,6 +50,7 @@
     position: absolute;
     top: 40%;
     left: 70%;
+    -webkit-transform: translate(-20%, -70%);
     transform: translate(-20%, -70%);
 }
 
@@ -61,66 +64,60 @@
     z-index: -1;
 }
 
+.text_shadow{
+    text-shadow:
+    3px 3px 0 #000,
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.text_shadow_small{
+    text-shadow:
+    1px 1px 0 #000,
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.bold{
+    font-weight: bold;
+}
 .arise-n-grow {
-    font-size: 50px;
-    /* filter: blur(4px); */
-    animation: growth 7s;
-    -webkit-text-stroke: 2px black;
+    font-size: 36px;
+    animation: growth 6s ease;
+    -webkit-animation: growth 6s ease;
+    -moz-animation: growth 6s ease;
+    -ms-animation: growth 6s ease;
+    -o-animation: growth 6s ease;
 }
 
 @keyframes growth {
     0% {
-        /* filter: blur(3px); */
-        font-size: 45px;
+        /* font-size: 28px; */
+        opacity: 0.1;
+        font-weight: normal;
+        -webkit-transform: translateY(100rem);
         transform: translateY(100rem);
-        -webkit-text-stroke: 0px white;
     }
-
-    50% {
-        /* filter: blur(2px); */
-        font-size: 45px;
+    40% {
+        /* font-size: 35px; */
+        opacity: 0.35;
+        font-weight: normal;
+    }
+    90% {
+        /* font-size: 36px; */
+        font-weight: normal;
+        -webkit-transform: translateY(0rem);
         transform: translateY(0rem);
-        -webkit-text-stroke: 0px white;
-    }
-
-    100% {
-        /* filter: blur(0.8px); */
-        font-size: 50px;
-        -webkit-text-stroke: 2px black;
+        opacity: 1;
     }
 }
 
 .small_growth {
-    font-size: 20px;
-    animation: small_growth 7s;
-    -webkit-text-stroke: 0.85px black;
+    font-size: 19px;
 }
-
-@keyframes small_growth {
-    0% {
-        /* filter: blur(3px); */
-        font-size: 17px;
-        transform: translateY(100rem);
-        -webkit-text-stroke: 0px white;
-    }
-
-    50% {
-        /* filter: blur(2px); */
-        font-size: 17px;
-        transform: translateY(0rem);
-        -webkit-text-stroke: 0px white;
-    }
-
-    100% {
-        /* filter: blur(0.8px); */
-        font-size: 20px;
-        -webkit-text-stroke: 0.85px black;
-    }
-}
-
-/* .mission {
-    height: 50rem;
-} */
 
 .mission-row {
     height: 25rem;
@@ -335,12 +332,14 @@ btn:visited {
 }
 
 .btn:hover {
+    -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4)
         /* x, y, blurr, color */
 }
 
 .btn:active {
+    -webkit-transform: translateY(-1px);
     transform: translateY(-1px);
     /* In relation to initial state */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4)
@@ -369,6 +368,7 @@ btn:visited {
 
 /* Show a bigger button that fades away */
     {
+    -webkit-transform: scaleX(1.4) scaleY(1.6);
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
@@ -461,15 +461,18 @@ btn:visited {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
+        -webkit-transform: translateX(-100px);
         transform: translateX(-100px);
     }
 
     80% {
+        -webkit-transform: translateX(10px);
         transform: translateX(10px);
     }
 
     100% {
         opacity: 1;
+        -webkit-transform: translateX(0);
         transform: translateX(0);
     }
 }
@@ -477,15 +480,18 @@ btn:visited {
 @keyframes moveInRight {
     0% {
         opacity: 0;
+        -webkit-transform: translateX(100px);
         transform: translateX(100px);
     }
 
     80% {
+        -webkit-transform: translateX(-10px);
         transform: translateX(-10px);
     }
 
     100% {
         opacity: 1;
+        -webkit-transform: translateX(0);
         transform: translateX(0);
     }
 }
@@ -906,6 +912,7 @@ btn:visited {
 }
 
 .card__side--back {
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
@@ -922,10 +929,12 @@ btn:visited {
 }
 
 .card:hover .card__side--front {
+    -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
 }
 
 .card:hover .card__side--back {
+    -webkit-transform: rotateY(0);
     transform: rotateY(0);
 }
 
@@ -1294,19 +1303,34 @@ section .text-container .text-box h3 {
     width: 100%;
     height: 20rem;
 }
-
+.fake_scene {
+    width: 100%;
+    height: 2rem;
+}
 .cardRoll {
     position: relative;
     width: 100%;
     height: 100%;
-    box-shadow: 0 0 45px rgba(28, 75, 28, 1);
+    box-shadow: 0 0 20px rgba(28, 75, 28, 1);
     cursor: pointer;
-    transition: transform 1s;
+    transition: 1s transform ease;
+    -webkit-transition: 1s transform ease;
+    -moz-transition: 1s transform ease;
+    -ms-transition: 1s transform ease;
+    -o-transition: 1s transform ease;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
 }
 
 .cardRoll.is-flipped {
     transform: rotateY(var(--position));
+    -webkit-transform: rotateY(var(--position));
+    -moz-transform: rotateY(var(--position));
+    -ms-transform: rotateY(var(--position));
+    -o-transform: rotateY(var(--position));
 }
 
 .front,
@@ -1335,13 +1359,9 @@ section .text-container .text-box h3 {
 .back {
     background: rgba(28, 75, 28, 1);
     color: white;
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
-
-/* .scene:hover .cardRoll {
-    transform: rotateY(180deg);
-    transition: transform 0.5s;
-} */
 
 .blur {
     opacity: 0.65;
@@ -1404,86 +1424,35 @@ section .text-container .text-box h3 {
     background-size: 30px 30px, 30px 30px;
 }
 
-.fly1 {
-    font-size: 20px;
-    animation: fly1 7s;
-    -webkit-text-stroke: 0.85px black;
+.hidden-vis{
+    opacity: 0;
 }
-
-@keyframes fly1 {
-    0% {
-        /* filter: blur(3px); */
-        font-size: 17px;
-        transform: translateY(100rem);
-        -webkit-text-stroke: 0px white;
-    }
-
-    50% {
-        /* filter: blur(2px); */
-        font-size: 17px;
-        transform: translateY(0rem);
-        -webkit-text-stroke: 0px white;
-    }
-
-    100% {
-        /* filter: blur(0.8px); */
-        font-size: 20px;
-        -webkit-text-stroke: 0.85px black;
-    }
+.fly1 {
+    animation-name: fly;
+    animation-duration: 2s;
+    animation-delay: 7s;
 }
 
 .fly2 {
-    font-size: 20px;
-    animation: fly2 7s;
-    -webkit-text-stroke: 0.85px black;
-}
-
-@keyframes fly2 {
-    0% {
-        /* filter: blur(3px); */
-        font-size: 17px;
-        transform: translateY(100rem);
-        -webkit-text-stroke: 0px white;
-    }
-
-    50% {
-        /* filter: blur(2px); */
-        font-size: 17px;
-        transform: translateY(0rem);
-        -webkit-text-stroke: 0px white;
-    }
-
-    100% {
-        /* filter: blur(0.8px); */
-        font-size: 20px;
-        -webkit-text-stroke: 0.85px black;
-    }
+    animation-name: fly;
+    animation-duration: 2s;
+    animation-delay: 9s;
 }
 
 .fly3 {
-    font-size: 20px;
-    animation: fly3 7s;
-    -webkit-text-stroke: 0.85px black;
+    animation-name: fly;
+    animation-duration: 2s;
+    animation-delay: 11s;
 }
 
-@keyframes fly3 {
+@keyframes fly{
     0% {
-        /* filter: blur(3px); */
-        font-size: 17px;
-        transform: translateY(100rem);
-        -webkit-text-stroke: 0px white;
+        opacity: 0
     }
-
-    50% {
-        /* filter: blur(2px); */
-        font-size: 17px;
-        transform: translateY(0rem);
-        -webkit-text-stroke: 0px white;
+    60% {
+        opacity: 0.5
     }
-
     100% {
-        /* filter: blur(0.8px); */
-        font-size: 20px;
-        -webkit-text-stroke: 0.85px black;
+        opacity: 1
     }
 }
