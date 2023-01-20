@@ -1,4 +1,5 @@
-
+const banner_text = document.querySelector('#banner_text');
+const banner_head = document.querySelector('#banner_head');
 const mainHome = document.querySelector('#mainHome');
 const page = document.querySelector('#page');
 const cover = document.querySelector('#cover');
@@ -32,4 +33,27 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 setTimeout(() =>
     landingBtn.classList.remove('hidden-slow')
-    , 6200);
+    , 14000);
+
+setTimeout(() =>
+    banner_head.classList.add('text_shadow')
+, 7000);
+setTimeout(() =>
+    banner_head.classList.add('bold')
+, 7000);
+setTimeout(() =>
+    banner_head.classList.remove('hidden-vis')
+, 4999);
+setTimeout(() =>
+    banner_text.classList.add('text_shadow_small')
+, 6999);
+
+setTimeout(() =>
+banner_text.children[0].classList.remove('hidden-vis')
+, 8100);
+setTimeout(() =>
+banner_text.children[1].classList.remove('hidden-vis')
+, 10100);
+setTimeout(() =>
+banner_text.children[3].classList.remove('hidden-vis')
+, 12100);
