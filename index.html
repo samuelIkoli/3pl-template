@@ -1,52 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel='shortcut icon' type='image/x-icon' href='img/Icon.png' />
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script> -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/ 1.12.4/jquery.min.js" defer></script>
-
-    <link rel="stylesheet" href="css/fontstyle.css">
-
-    <script type="text/javascript" defer src="js/design.js"></script>
-
-    <meta name="description" content="Fresh ideas, dynamic engagement & innovative solutions" />
-
-
     <title>Phoenix Park Projects</title>
+    <meta name="description" content="Fresh ideas, dynamic engagement & innovative solutions" />
+    <link rel='shortcut icon' type='image/x-icon' href='img/Icon.png' />
 
-    <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
-
-    <link rel="stylesheet" href="css/landing.css">
-
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>   
 
+    <link rel="stylesheet" href="css/fontstyle.css">
+    <link rel="stylesheet" href="css/landing.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <script defer src="./js/reveal.js"></script>
+    <script defer src="./js/home.js"></script>
+    <script defer src="./js/rotate.js"></script>
 </head>
-
-
 
 <body>
     <div id="page">
         <section class="landing" id="cover">
             <div id="landing-header">
-                <h1 class="hidden-overflow pt-4 arise-n-grow">Phoenix<br>Park<br>Projects! <br>Limited</h1>
-                <p class="small_growth"><span class="fly1">Fresh ideas,</span><span class="fly2"> dynamic
-                        engagement</span> <br><span class="fly3"> & innovative solutions</span></p>
+                <h1 id="banner_head" class="hidden-overflow pt-4 arise-n-grow hidden-vis">Phoenix<br>Park<br>Projects <br>Ltd.</h1>
+                <p id="banner_text" class="small_growth">
+                    <span class="fly1 hidden-vis">Fresh ideas,</span>
+                    <span class="fly2 hidden-vis"> dynamic
+                        engagement</span> <br> 
+                    <span class="fly3 hidden-vis"> & innovative solutions</span>
+                </p>
                 <div class="stage">
                     <button class="box bounce-5 banner_button hidden-slow" id="landingBtn">Enter Website
                         &#8595;</button>
@@ -242,22 +228,7 @@
                         businessmen in individual African nations. The African business community
                         can effectively participate and take ownership of the African Continent Free
                         Trade Agreement (AfCFTA). <br>
-                        <!-- At 3PL we aim to create physical and virtual platforms serving as hubs of manufacturing
-                        excellence and digital innovations. The provision of professional training services in skill
-                        development across industrial sectors and rendering of consultancy services to serve customers’
-                        operational and functional needs also form part of our core offerings. Project locations are
-                        carefully chosen to encourage industrial growth poles and develop industrial cities along
-                        economic corridors and zones. Our project will attract core and complimentary industries in
-                        particular ecosystems to promote sustainable developments. The use of renewable energy programs
-                        are pursued taking advantage of the global carbon credit market and net zero initiatives. Key
-                        focus of our project selection is combining technology with natural resources to drive economic
-                        and inclusive growth that supports employment generation, prosperity and social stability. We
-                        continue to seek out partners and stakeholders to collaboratively develop high quality assets to
-                        produce competitive goods and services to meet international standards and demands. The
-                        experience, knowledge and skill sets of our professional team shall be deployed to ensure that
-                        customer’s satisfaction is guaranteed within a high quality and cost effective regime. You are
-                        welcome to do business with us and patronize the diversity of products and offerings ingeniously
-                        designed by our talented team and partners. -->
+
                     </div>
                 </div>
             </section>
@@ -277,12 +248,28 @@
                         outcome on national development. The sectors are drivers of growth with accelerated income
                         generation capacity and potential for promotion of circular economy. Below are the sectors we
                         focus on:</div>
+
                     <div class="row justify-content-center">
-                        <div class="d-flex flippers justify-content-center mb-5 col-12 col-md-6 col-lg-4">
-                            <div class="scene">
+                        <div class="d-flex flippers justify-content-center mb-4 col-12 col-md-0 col-lg-0 hidden-vis">
+                            <div class="fake_scene" style="z-index:1;">
                                 <div class="cardRoll transformCard">
                                     <div class="front"
-                                        style="background-image: url(./img/agriculture\ image\ plant.jpeg); background-size: cover;">
+                                        style="background-image: url(./img/agriculture_image_plant.jpeg); background-size: cover;">
+                                        sample
+                                    </div>
+                                    <div class="back">
+                                        <div class="px-3">
+                                            sample text
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flippers justify-content-center mb-4 col-12 col-md-6 col-lg-4">
+                            <div class="scene" style="z-index:1;">
+                                <div class="cardRoll transformCard">
+                                    <div class="front"
+                                        style="background-image: url(./img/agriculture_image_plant.jpeg); background-size: cover;">
                                         Agriculture
                                     </div>
                                     <div class="back">
@@ -296,8 +283,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flippers justify-content-center mb-5 col-12 col-md-6 col-lg-4">
-                            <div class="scene">
+                        <div class="d-flex flippers justify-content-center mb-4 col-12 col-md-6 col-lg-4">
+                            <div class="scene" style="z-index:1;">
                                 <div class="cardRoll transformCard">
                                     <div class="front"
                                         style="background-image: url(./img/housing.jpeg); background-size: cover;">
@@ -314,8 +301,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flippers justify-content-center mb-5 col-12 col-md-6 col-lg-4">
-                            <div class="scene">
+                        <div class="d-flex flippers justify-content-center mb-4 col-12 col-md-6 col-lg-4">
+                            <div class="scene" style="z-index:1;">
                                 <div class="cardRoll transformCard">
                                     <div class="front"
                                         style="background-image: url(./img/mining.jpg); background-size: cover;">
@@ -332,8 +319,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flippers justify-content-center mb-5 col-12 col-md-6 col-lg-4">
-                            <div class="scene">
+                        <div class="d-flex flippers justify-content-center mb-4 col-12 col-md-6 col-lg-4">
+                            <div class="scene" style="z-index:1;">
                                 <div class="cardRoll transformCard">
                                     <div class="front"
                                         style="background-image: url(./img/construct.jpg); background-size: cover;">
@@ -349,8 +336,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flippers justify-content-center mb-5 col-12 col-md-6 col-lg-4">
-                            <div class="scene">
+                        <div class="d-flex flippers justify-content-center mb-4 col-12 col-md-6 col-lg-4">
+                            <div class="scene" style="z-index:1;">
                                 <div class="cardRoll transformCard">
                                     <div class="front"
                                         style="background-image: url(./img/oil.jpg); background-size: cover;">
@@ -367,8 +354,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flippers justify-content-center mb-5 col-12 col-md-6 col-lg-4">
-                            <div class="scene">
+                        <div class="d-flex flippers justify-content-center mb-4 col-12 col-md-6 col-lg-4">
+                            <div class="scene" style="z-index:1;">
                                 <div class="cardRoll transformCard">
                                     <div class="front"
                                         style="background-image: url(./img/petro.jpg); background-size: cover;">
@@ -383,8 +370,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flippers justify-content-center mb-5 col-12 col-md-6 col-lg-4">
-                            <div class="scene">
+                        <div class="d-flex flippers justify-content-center mb-4 col-12 col-md-6 col-lg-4">
+                            <div class="scene" style="z-index:1;">
                                 <div class="cardRoll transformCard">
                                     <div class="front"
                                         style="background-image: url(./img/ict.jpg); background-size: cover;">
@@ -401,8 +388,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flippers justify-content-center mb-5 col-12 col-md-6 col-lg-4">
-                            <div class="scene">
+                        <div class="d-flex flippers justify-content-center mb-4 col-12 col-md-6 col-lg-4">
+                            <div class="scene" style="z-index:1;">
                                 <div class="cardRoll transformCard">
                                     <div class="front"
                                         style="background-image: url(./img/climate.jpg); background-size: cover;">
@@ -419,8 +406,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flippers justify-content-center mb-5 col-12 col-md-6 col-lg-4">
-                            <div class="scene">
+                        <div class="d-flex flippers justify-content-center mb-4 col-12 col-md-6 col-lg-4">
+                            <div class="scene" style="z-index:1;">
                                 <div class="cardRoll transformCard">
                                     <div class="front"
                                         style="background-image: url(./img/finance.jpg); background-size: cover;">
@@ -435,8 +422,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex flippers justify-content-center mb-5 col-12 col-md-6 col-lg-4">
-                            <div class="scene">
+                        <div class="d-flex flippers justify-content-center mb-4 col-12 col-md-6 col-lg-4">
+                            <div class="scene" style="z-index:1;">
                                 <div class="cardRoll transformCard">
                                     <div class="front"
                                         style="background-image: url(./img/tourism.jpg); background-size: cover;">
@@ -458,7 +445,6 @@
             <section class="my-5">
                 <div class="container hidden-overflow fonta">
                     <div class="row hidden-overflow sideveal">
-
                         <div class="col-12">
                             <div class="hidden-overflow">
                                 <h1><strong><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
@@ -613,10 +599,5 @@
         </section>
     </div>
 </body>
-
-<script src="./js/sideveal.js"></script>
-<script src="./js/leftveal.js"></script>
-<script src="./js/home.js"></script>
-<script src="./js/rotate.js"></script>
 
 </html>
