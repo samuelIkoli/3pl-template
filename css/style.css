@@ -1370,14 +1370,13 @@ section .text-container .text-box h3 {
 }
 
 .cardiA {
-    height: 5rem;
+    height: 7rem;
     margin-bottom: 1rem;
     box-shadow: 0 0 15px rgba(28, 75, 28, 1);
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25% 25%;
 }
 
 .cardx {
