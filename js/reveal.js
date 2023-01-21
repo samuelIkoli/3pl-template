@@ -1,6 +1,20 @@
-function reveal() {
-    const reveals = document.querySelectorAll(".reveal");
-    for (const reveal of reveals) {
+const reveals = document.querySelectorAll(".reveal");
+const revealListener = () =>{
+    revealFactory(reveals);
+}
+
+const sideveals = document.querySelectorAll(".sideveal");
+const siderevealListener= () =>{
+    revealFactory(sideveals);
+}
+
+const leftveals = document.querySelectorAll(".leftveal");
+const leftrevealListener= () =>{
+    revealFactory(leftveals);
+}
+
+const revealFactory = (revealInterface)=> {
+    for (const reveal of revealInterface) {
         const windowHeight = window.innerHeight;
         const elementTop = reveal.getBoundingClientRect().top;
         const elementVisible = 150;
@@ -12,6 +26,6 @@ function reveal() {
         }
     }
 }
-
-window.addEventListener("scroll", reveal);
-
+window.addEventListener("scroll", revealListener);
+window.addEventListener("scroll", siderevealListener);
+window.addEventListener("scroll", leftrevealListener);
