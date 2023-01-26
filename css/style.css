@@ -5,7 +5,16 @@
     box-sizing: border-box; */
 /* overflow-x: hidden; */
 /* } */
-
+.banner_fadeBottom {
+    height: 40rem;
+    background-image: linear-gradient(
+      180deg,
+      transparent,
+      #61cb5d,
+      #c5efc3
+    );
+}
+  
 .mt-10 {
     margin-top: 144px;
 }
@@ -657,7 +666,7 @@ btn:visited {
 }
 
 #footer-main {
-    background-image: linear-gradient(to right bottom, #f3fbf2, #1c4b1c);
+    background-image: linear-gradient(to right bottom, #c5efc3, #1c4b1c);
     margin-top: 8rem;
 }
 
@@ -1221,7 +1230,7 @@ section .text-container {
 section .text-container .text-box {
     margin: 20px;
     padding: 20px;
-    background: #3bb037;
+    background: #61cb5d;
 }
 
 section .text-container .text-box h3 {
