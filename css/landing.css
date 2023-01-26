@@ -136,22 +136,22 @@
 
 .slideshow li:nth-child(2) {
   background-image: url(../img/logo3.jpg);
-  animation-delay: 10s;
+  animation-delay: 7s;
 }
 
 .slideshow li:nth-child(3) {
   background-image: url(../img/logo2.png);
-  animation-delay: 20s;
+  animation-delay: 14s;
 }
 
 .slideshow li:nth-child(4) {
   background-image: url(../img/heaader.jpg);
-  animation-delay: 15s;
+  animation-delay: 21s;
 }
 
 .slideshow li:nth-child(5) {
   background-image: url(../img/logo6.jpg);
-  animation-delay: 20s;
+  animation-delay: 28s;
 }
 
 .slideshow li:nth-child(6) {
@@ -196,4 +196,51 @@
       transparent,
       rgba(37, 37, 37, 0.61),
       #111);
+}
+
+/* slideshow 2 */
+.slideshow2 {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.slideshow2 li {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite;
+}
+
+.slideshow2 li:nth-child(1) {
+  background-image: url(../img/heaader.jpg);
+}
+
+.slideshow2 li:nth-child(2) {
+  background-image: url(../img/logo6.jpg);
+  animation-delay: 7s;
+}
+
+.slideshow2 li:nth-child(3) {
+  background-image: url(../img/logo2.png);
+  animation-delay: 14s;
+}
+
+.slideshow2 li:nth-child(4) {
+  background-image: url(../img/logo4.jpg);
+  animation-delay: 21s;
 }

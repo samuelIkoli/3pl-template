@@ -7,14 +7,12 @@
 /* } */
 .banner_fadeBottom {
     height: 40rem;
-    background-image: linear-gradient(
-      180deg,
-      transparent,
-      #61cb5d,
-      #c5efc3
-    );
+    background-image: linear-gradient(180deg,
+            transparent,
+            #61cb5d,
+            #c5efc3);
 }
-  
+
 .mt-10 {
     margin-top: 144px;
 }
